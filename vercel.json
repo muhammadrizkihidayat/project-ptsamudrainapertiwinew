@@ -1,6 +1,5 @@
 {
-  "version": 2,
-  "framework": null,
-  "buildCommand": "composer install --no-dev && npm install && npm run build",
-  "outputDirectory": "public/build"
+    "$schema": "https://openapi.vercel.sh/vercel.json",
+    "source": "/feedback/:type",
+    "destination": "/api/feedback/:id"
 }
